@@ -3,32 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Poem generator
-    </title>
+    <title>Poem generator</title>
+    <link rel="stylesheet" href="style.css"> 
 </head>
 <body>
-    <header>
-    <h1>Welcome to the French poem generator</h1>
-    </header>
+    <div class="container">
+        <header>
+            <h1>Welcome to the French poem generator</h1>
+        </header>
 
-    <main>
-        <form>
-            <input type="text" placeholder="Enter the topic of the poem you want"
-            autofocus
-            required
-            autocomplete = "off"
-            >
-            <input type="submit">
-        </form>
-        <div>
-            The poem will go here.
-            <br>
-            The poem will go here.
-        </div>
-    </main>
+        <main>
+            <form id="poem-form">
+                <input type="text" placeholder="Enter the topic of the poem you want"
+                autofocus
+                required
+                autocomplete="off"
+                class="instruction"
+                >
+                <input type="submit" value="Generate" class="submit-button">
+            </form>
+            <div class="poem" id="poem-display">
+                The poem will go here.
+                <br>
+                The poem will go here.
+            </div>
+        </main>
 
-    <footer>It is coded by Samrawit Yisak, open source that is in <a href="https://github.com/samrawit16/Poem-Generator" target="_blank">Github</a> </footer>
+        <footer>
+            It is coded by Samrawit Yisak, open source on 
+            <a href="https://github.com/samrawit16/Poem-Generator" target="_blank" rel="noopener noreferrer">GitHub</a> 
+        </footer>
 
-    <script src="index.js"></script>
+        <script src="index.js"></script>
+    </div>
 </body>
 </html>
